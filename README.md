@@ -122,7 +122,7 @@ python -m unittest discover -s scripts -p 'test_*.py' -v
 python scripts/validate_skill.py
 ```
 
-CI runs these checks on pushes and pull requests. They verify skill consistency and scripts, **not** the runtime quality of an unrelated website.
+These checks verify skill consistency and scripts, **not** the runtime quality of an unrelated website. Run them locally before opening a pull request.
 
 ## Repository map
 
@@ -135,8 +135,7 @@ rcs-frontend-skill/
 ├── agents/openai.yaml            # ChatGPT skill UI metadata
 ├── assets/AGENTS.md              # Adapter for AGENTS.md/custom rules
 ├── references/                   # Design, motion, 3D, engineering, QA guidance
-├── scripts/                      # Read-only inventory and self-checks
-└── .github/workflows/            # Automated checks
+└── scripts/                      # Read-only inventory and self-checks
 ```
 
 ## Sources and attribution
