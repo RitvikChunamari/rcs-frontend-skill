@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Editor and OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Local/secret files
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Generated caches / builds
+node_modules/
+dist/
+build/
+coverage/
