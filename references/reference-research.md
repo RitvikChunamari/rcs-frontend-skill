@@ -3,7 +3,7 @@
 ## Where to look
 
 - **Creative websites / motion / 3D:** https://www.awwwards.com/websites/ , https://www.cssdesignawards.com/ , https://www.siteinspire.com/ , https://godly.website/ , https://www.hoverstat.es/ , https://www.behance.net/ ; search by project type, interactive technique and date. Awwwards is inspiration, **not proof** of UX, accessibility or performance quality.
-- **Shipped UX flows and screen libraries:** use freely accessible product sites, public case studies, and public views such as https://pageflows.com/ . Treat commercial libraries as optional only when the user already has authorized access; never make them a dependency.
+- **Shipped UX flows and screen libraries:** https://mobbin.com/ , https://pageflows.com/ ; use public accessible views or connected MCP **if authorized**. Mobbin's MCP may require a paid plan; never invent access or claim every screen is freely available.
 - **Graphic/creative technology studies:** https://tympanus.net/codrops/ , https://www.shadertoy.com/ (check licenses), https://threejs.org/examples/ , https://www.figma.com/community/ (check asset licenses).
 - **Systematic patterns:** https://www.designsystems.com/ , official component docs. For people using custom component galleries, inspect implementation and terms before adoption.
 

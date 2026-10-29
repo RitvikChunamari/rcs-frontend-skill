@@ -68,3 +68,15 @@ Do not assume a connector is installed or grant it capabilities it does not have
 ## Selection rubric
 
 For each proposed third-party tool ask: (1) existing equivalent? (2) extra JS/GPU cost? (3) keyboard/reduced-motion support? (4) stable version/docs? (5) license and free-plan restrictions? (6) removal/cleanup complexity? (7) visual fit with art direction? Install only when benefit exceeds long-term cost.
+
+## Premium edition source-of-truth additions
+
+- DTCG design token interoperability 2025.10 (Community Group, not W3C Recommendation): https://www.designtokens.org/tr/2025.10/format/
+- MDN View Transitions (focus/route behavior must be checked): https://developer.mozilla.org/en-US/docs/Web/API/View_Transition_API
+- MDN responsive container queries: https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Containment/Container_size_and_style_queries
+- R3F adaptive performance and LOD: https://r3f.docs.pmnd.rs/advanced/scaling-performance
+- Playwright baseline screenshot comparison: https://playwright.dev/docs/test-snapshots
+- Storybook interaction tests: https://storybook.js.org/docs/writing-tests/interaction-testing
+- Apple HIG motion guidelines: https://developer.apple.com/design/human-interface-guidelines/motion
+
+Avoid treating trend catalogs as normative design laws. Revisit APIs, licenses and access at actual implementation time.

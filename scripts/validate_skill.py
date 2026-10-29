@@ -8,7 +8,10 @@ ROOT = Path(__file__).resolve().parents[1]
 SKILL = ROOT / "SKILL.md"
 REQUIRED = ["SKILL.md", "README.md", "LICENSE", "agents/openai.yaml",
             "assets/AGENTS.md", "references/style-atlas.md",
-            "references/style-composition.md", "references/testing-and-quality.md"]
+            "references/style-composition.md", "references/testing-and-quality.md",
+            "references/premium-creative-direction.md", "references/premium-qa-gates.md",
+            "scripts/design_consistency_audit.py", "scripts/quality_gate.py",
+            "assets/templates/creative-direction-brief.md", "assets/templates/quality-report.md"]
 
 
 def validate():

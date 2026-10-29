@@ -1,10 +1,10 @@
 <div align="center">
 
-# RC's Frontend Design Skill
+# RC's Frontend Skill
 
-**A frontend design and implementation skill for Claude Code, Codex, Cursor, and other AI coding agents.**
+**Original art direction. Precision UI/UX. Cinematic motion. Real frontend engineering. Verified delivery.**
 
-*Distinctive UI/UX. Expressive motion. Thoughtful 3D. Production-grade frontend engineering.*
+*A free, open-source, premium-depth creative studio workflow for AI coding agents.*
 
 [Quick start](#install) · [What it does](#what-it-does) · [12 design directions](#design-style-atlas) · [Quality gates](#quality-gates) · [Contributing](CONTRIBUTING.md)
 
@@ -12,9 +12,7 @@
 
 ---
 
-RC's Frontend Design Skill gives agentic coding tools an opinionated workflow for **researching, designing, implementing, connecting, and testing original interfaces**. It combines established design-system principles with editorial design, motion, creative coding, and 3D techniques without sacrificing real product behavior.
-
-Use it as a reusable `SKILL.md` package for website design, web app UI/UX, frontend redesigns, design systems, responsive React interfaces, accessibility, animation, WebGL, and production QA. The instructions are portable: the agent adapts them to the project's existing framework and the tools it can actually access.
+RC's Frontend Skill gives a coding agent an opinionated workflow for **researching, designing, implementing, connecting, and testing original interfaces**. It combines established design-system principles with experimental editorial, motion, creative-coding, and 3D approaches, without sacrificing real product behavior.
 
 It is **not** a UI component library, a pretrained model, an Awwwards scraper, an API key, or a guarantee of an award-winning site. Agents still need the project files and tools necessary to implement and verify changes.
 
@@ -22,16 +20,16 @@ It is **not** a UI component library, a pretrained model, an Awwwards scraper, a
 
 ### Option A — Skills CLI (agents supported by the CLI)
 
-Install from GitHub:
+After this repository is published on GitHub, install it by replacing `OWNER` with the GitHub owner:
 
 ```bash
-npx skills add RitvikChunamari/rcs-frontend-skill
+npx skills add OWNER/rcs-frontend-skill
 ```
 
 To select global/personal scope for supported agents:
 
 ```bash
-npx skills add RitvikChunamari/rcs-frontend-skill -g
+npx skills add OWNER/rcs-frontend-skill -g
 ```
 
 The [Skills CLI](https://github.com/vercel-labs/skills) can prompt you to select compatible agents. Global install locations, supported agent names, and behavior vary by tool/version. This is **not** a single universal install to every app.
@@ -44,22 +42,36 @@ The [Skills CLI](https://github.com/vercel-labs/skills) can prompt you to select
 4. In apps supporting only custom instructions or `AGENTS.md`, use [`assets/AGENTS.md`](assets/AGENTS.md) as an adapter and update its reference path to this folder. See [`references/portability.md`](references/portability.md).
 5. Confirm activation with the sample prompt below.
 
-### Agent compatibility
+You can use this in agents that support readable skills/instructions, including compatible versions of Antigravity, Codex, Claude Code, Cursor, OpenCode and others. Exact setup varies: consult each app's current documentation and do not assume the presence of a particular settings button.
 
-| Agent or format | How to use this repository |
-|---|---|
-| **Claude Code** | Install through a compatible skills workflow or place the folder where Claude can discover `SKILL.md`. |
-| **OpenAI Codex / ChatGPT** | Install as an Agent Skill or make the skill directory available to the agent. |
-| **Cursor, OpenCode, Antigravity, and similar tools** | Use native skill support when available; otherwise adapt [`assets/AGENTS.md`](assets/AGENTS.md) to the tool's rules format. |
-| **Any agent that reads instructions** | Provide `SKILL.md` and the task-relevant files under `references/`; capabilities still depend on the host agent. |
+## Premium depth (v2)
 
-Exact installation paths and feature names change between tools and versions. Follow the agent's current official documentation, and verify that it loads the skill with the sample prompt below.
+Beyond the original 12-style atlas, the skill now includes **8 advanced field manuals**, practical decision-record templates and **two new read-only helpers**:
+
+- **Creative director** — compare design concepts, choose a strong visual thesis, establish signature motifs and critique real screenshots.
+- **Typography studio** — optical precision, responsive editorial grids, type scale, cropping and alignment.
+- **Design system architect** — token layering, semantic modes, accessible component contracts and Figma-to-code governance.
+- **Interaction architect** — state machines for pointer, keyboard, touch, network and motion behavior.
+- **Creative technologist** — progressive 3D/GLB/WebGL design, motion budgets and low-power fallbacks.
+- **Backend reliability engineer** — real API contracts, errors, optimistic updates, auth and streaming.
+- **QA release director** — evidence-based release gates and strict separation of tested vs untested claims.
+- **Field recipes** — design workflows for portfolios, dashboards, 3D product showcases and real-data redesigns.
+
+Included templates: creative direction brief, reference teardown, interaction contract and quality report. The tools are advisory, not standalone website testing: `design_consistency_audit.py` inventories CSS patterns; `quality_gate.py` summarizes submitted evidence and marks missing evidence **not verified**.
+
+```bash
+python scripts/design_consistency_audit.py /path/to/project --format markdown
+python scripts/quality_gate.py assets/examples/quality-evidence.example.json
+# example intentionally exits 2: its gates are NOT RUN
+```
+
+**Premium means thoroughness and care, not paid-only dependencies or a guarantee of results.** A skilled agent must still have project and browser access to execute the process.
 
 ## What it does
 
 | Discipline | What the agent is instructed to deliver |
 |---|---|
-| **Design research** | Deconstruct freely accessible live sites and public examples; learn from Apple, Material, Fluent, Carbon, Spectrum, and other design systems without cloning proprietary work. |
+| **Design research** | Deconstruct relevant Awwwards/Mobbin examples; learn from Apple, Material, Fluent, Carbon, Spectrum, and other design systems without cloning proprietary work. |
 | **Art direction and UX** | Choose a defensible concept, visual system, layout, typography, content hierarchy, responsive behaviors, and interaction states. |
 | **Frontend engineering** | Implement semantic, maintainable UI using the **existing project's stack** wherever practical; preserve routes, data, SEO, and behavior. |
 | **Motion and interaction** | Choose CSS/WAAPI, Motion, GSAP/ScrollTrigger and Lenis **when justified**, with reduced-motion and teardown rules. |
@@ -122,7 +134,13 @@ python -m unittest discover -s scripts -p 'test_*.py' -v
 python scripts/validate_skill.py
 ```
 
-These checks verify skill consistency and scripts, **not** the runtime quality of an unrelated website. Run them locally before opening a pull request.
+CI runs these checks on pushes and pull requests. They verify skill consistency and scripts, **not** the runtime quality of an unrelated website.
+
+## Reference selection
+
+Read only the relevant field manuals for the task. The main `SKILL.md` routes to the specific files on demand, so long design prompts do not need to be pasted into every conversation. The new materials are in `references/premium-creative-direction.md`, `typography-and-composition.md`, `interaction-architecture.md`, `creative-tech-production.md`, `design-system-architecture.md`, `api-and-state-resilience.md`, `premium-qa-gates.md` and `field-recipes.md`.
+
+Official documentation checked for the premium edition: [WCAG 2.2](https://www.w3.org/TR/wcag/), [Core Web Vitals](https://web.dev/articles/vitals), [Playwright screenshots](https://playwright.dev/docs/test-snapshots), [GSAP ScrollTrigger](https://gsap.com/docs/v3/Plugins/ScrollTrigger/), [R3F performance](https://r3f.docs.pmnd.rs/advanced/scaling-performance), [DTCG tokens 2025.10](https://www.designtokens.org/tr/2025.10/format/) and [MDN View Transitions](https://developer.mozilla.org/en-US/docs/Web/API/View_Transition_API).
 
 ## Repository map
 
@@ -135,7 +153,8 @@ rcs-frontend-skill/
 ├── agents/openai.yaml            # ChatGPT skill UI metadata
 ├── assets/AGENTS.md              # Adapter for AGENTS.md/custom rules
 ├── references/                   # Design, motion, 3D, engineering, QA guidance
-└── scripts/                      # Read-only inventory and self-checks
+├── scripts/                      # Read-only inventory, CSS audit, evidence checker, tests
+└── .github/workflows/            # Automated checks
 ```
 
 ## Sources and attribution

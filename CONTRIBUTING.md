@@ -31,3 +31,9 @@ We welcome corrections, official design-system links, original design patterns, 
 - Preserve existing functionality and follow the project's general safety and originality rules.
 
 Contributions are offered under the repository's MIT license.
+
+## Premium field-manual contributions
+
+A proposal should add *decisions, operating rules and a testable acceptance outcome*, not just a longer list of aesthetic examples or vendors. Prefer one focused `references/*.md` file over editing every existing manual. Document source links when advice depends on technical standards, distinguish heuristics from normative requirements, respect asset licenses, and include reduced-motion/keyboard and low-power variants for interactive features. Add unit tests for added scripts and avoid introducing new dependencies without a strong justification.
+
+For a meaningful change, exercise `python scripts/validate_skill.py`, `python -m unittest discover -s scripts -p 'test_*.py' -v` and any new script you introduced; report what actually ran.

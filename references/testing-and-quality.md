@@ -84,3 +84,7 @@ P0 broken core function, data loss, auth/security flaw, inaccessible primary tas
 ## Visual-style-specific gate
 
 Apply the 12-style acceptance matrix in [style-composition.md](style-composition.md) after the base test pyramid. Check contrast over moving glass/aurora, keyboard semantics for physical knobs and faux windows, pin/scene teardown for immersive scrolling, marquee pause in maximalism, real data labels for cyberpunk, responsive reading order for Swiss and Bento, and actual low-motion/static experiences for every style. Distinctiveness never overrides task success or measurable responsiveness.
+
+## Premium edition evidence pack
+
+For flagship work, fill `assets/templates/quality-report.md` after real tests. The adaptive example `assets/examples/visual-qa.spec.ts` shows Playwright screenshot/overflow/reduced-motion smoke tests but **must be copied and customized** in a real project. Use `scripts/quality_gate.py` only for completeness of declared evidence. See `references/premium-qa-gates.md` for release block conditions. Missing evidence is never a passing gate.

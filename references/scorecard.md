@@ -30,3 +30,7 @@ Score each dimension 0-5 based on evidence, never solely gut feel. Weighted perc
 5. Are controls bound to real backend behavior and genuinely resilient to failures?
 6. Can the user understand the page within seconds and finish their main task?
 7. Do observed screenshots show enough quality to justify the design claims?
+
+## Premium review extension
+
+For major visual changes, complete a Creative Direction Record (`assets/templates/creative-direction-brief.md`), screenshot critique in two passes, an interaction contract for the key feature, and the Evidence Report (`assets/templates/quality-report.md`). See `premium-qa-gates.md` for blocker classification. The score above never overrules functional blockers.
