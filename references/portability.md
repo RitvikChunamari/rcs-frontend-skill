@@ -28,7 +28,7 @@ A project-level `AGENTS.md` or equivalent rules file and one shared skill folder
 
 - Browser/DevTools MCP for live-page evidence.
 - Figma MCP for real design tokens and layout.
-- Mobbin MCP only with appropriate plan access.
+- Optional commercial design-library integrations only when the user already has authorized access; never make them a dependency.
 - Playwright and axe accessibility tools installed in the project/test environment.
 - Documentation search for version-specific APIs.
 
@@ -36,4 +36,4 @@ Agent availability and feature names change; verify current documentation. Alway
 
 ## Premium edition note
 
-The full skill has optional deep references and templates. Do **not** paste all references into a model's global prompt; load them per task. Example if a coding agent supports skills CLI: `npx skills add OWNER/rcs-frontend-skill -g` once the owner has published it. This is only a possible installer, not proof a particular app supports it. Verify with the target agent's documentation. Core skill ID remains `rcs-frontend` (lowercase, hyphenated); visible brand remains **RC's Frontend Skill**.
+The full skill has optional deep references and templates. Do **not** paste all references into a model's global prompt; load them per task. If a coding agent supports the Skills CLI, install it with `npx skills add RitvikChunamari/rcs-frontend-skill -g`. This is only a possible installer, not proof a particular app supports it. Verify with the target agent's documentation. Core skill ID remains `rcs-frontend` (lowercase, hyphenated); visible brand remains **RC's Frontend Skill**.

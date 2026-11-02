@@ -28,7 +28,7 @@ Test Chromium + WebKit + Firefox where feasible; prioritize target devices. Veri
 
 ## Evidence structure
 
-Use `assets/templates/quality-report.md`. Optionally feed machine-checked evidence JSON to `python scripts/quality_gate.py path/to/evidence.json`; it marks missing evidence as `not_run`, never treats unchecked boxes as passes. Quality gate output cannot prove all design quality; human visual review remains essential.
+Use `assets/templates/quality-report.md`. Optionally feed machine-checked evidence JSON to `python3 scripts/quality_gate.py path/to/evidence.json`; it marks missing evidence as `not_run`, never treats unchecked boxes as passes. Quality gate output cannot prove all design quality; human visual review remains essential.
 
 ## Blocker vs warning
 

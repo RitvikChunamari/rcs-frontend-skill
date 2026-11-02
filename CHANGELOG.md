@@ -1,5 +1,13 @@
 # Changelog
 
+## Unreleased
+
+- Replace GitHub installation placeholders with `RitvikChunamari/rcs-frontend-skill`.
+- Tighten skill-discovery metadata and add a default invocation prompt.
+- Standardize documented commands on `python3` and remove paid-library assumptions from the primary workflow.
+- Restore repository guidance, security policy, code of conduct, and structured issue forms.
+- Expand validation to cover all Markdown links, required community files, and unresolved owner placeholders.
+
 ## Premium edition (2026-10-28)
 
 - Preserve the complete 12-style atlas, existing art-direction guides, frontend engineering and test discipline.

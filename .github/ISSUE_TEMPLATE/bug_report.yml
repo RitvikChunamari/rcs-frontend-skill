@@ -1,0 +1,43 @@
+name: Bug report
+description: Report an incorrect, broken, or unsafe skill behavior
+title: "[Bug]: "
+labels:
+  - needs-triage
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for helping improve the skill. Do not include credentials or private data.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe the incorrect behavior and the task that triggered it.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What should have happened?
+    validations:
+      required: true
+  - type: textarea
+    id: agent
+    attributes:
+      label: Agent and environment
+      description: Name the agent, version when known, operating system, and installation method.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+      description: Provide a minimal prompt or sequence that reproduces the problem.
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Safety check
+      options:
+        - label: I removed credentials, personal data, and proprietary project content.
+          required: true

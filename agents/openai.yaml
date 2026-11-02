@@ -1,3 +1,4 @@
 interface:
   display_name: "RC's Frontend Skill"
-  short_description: "Original, high-craft UI/UX, motion, 3D and production frontend engineering"
+  short_description: "Design and ship distinctive production-ready frontends"
+  default_prompt: "Use $rcs-frontend to design and implement a distinctive, accessible frontend experience."

@@ -6,7 +6,8 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 SKILL = ROOT / "SKILL.md"
-REQUIRED = ["SKILL.md", "README.md", "LICENSE", "agents/openai.yaml",
+REQUIRED = ["SKILL.md", "README.md", "LICENSE", "AGENTS.md", "SECURITY.md",
+            "CODE_OF_CONDUCT.md", "CONTRIBUTING.md", "agents/openai.yaml",
             "assets/AGENTS.md", "references/style-atlas.md",
             "references/style-composition.md", "references/testing-and-quality.md",
             "references/premium-creative-direction.md", "references/premium-qa-gates.md",
@@ -31,11 +32,14 @@ def validate():
                 errors.append(f"Missing frontmatter field: {field}")
         if not re.search(r"(?m)^name: rcs-frontend\s*$", frontmatter.group(1)):
             errors.append("Skill name must match rcs-frontend")
-    docs = [SKILL, *sorted((ROOT / "references").glob("*.md"))]
+    docs = sorted(ROOT.rglob("*.md"))
     for doc in docs:
-        for rel in re.findall(r"\]\(([^)#]+)(?:#[^)]*)?\)", doc.read_text(encoding="utf-8")):
+        text = doc.read_text(encoding="utf-8")
+        if re.search(r"(?m)\bnpx skills add OWNER/", text):
+            errors.append(f"Unresolved GitHub owner placeholder: {doc.relative_to(ROOT)}")
+        for rel in re.findall(r"\]\(([^)#]+)(?:#[^)]*)?\)", text):
             if "://" not in rel and not rel.startswith(("mailto:", "#")):
-                if not (doc.parent / rel).is_file():
+                if not (doc.parent / rel).exists():
                     errors.append(f"Broken local link: {doc.relative_to(ROOT)} -> {rel}")
     return errors
 

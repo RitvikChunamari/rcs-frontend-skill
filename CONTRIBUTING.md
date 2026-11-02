@@ -16,8 +16,8 @@ We welcome corrections, official design-system links, original design patterns, 
 6. Test locally:
 
    ```bash
-   python -m unittest discover -s scripts -p 'test_*.py' -v
-   python scripts/validate_skill.py
+   python3 -m unittest discover -s scripts -p 'test_*.py' -v
+   python3 scripts/validate_skill.py
    ```
 
 7. Describe the change and tests in your pull request. Claim only checks you actually ran.
@@ -36,4 +36,4 @@ Contributions are offered under the repository's MIT license.
 
 A proposal should add *decisions, operating rules and a testable acceptance outcome*, not just a longer list of aesthetic examples or vendors. Prefer one focused `references/*.md` file over editing every existing manual. Document source links when advice depends on technical standards, distinguish heuristics from normative requirements, respect asset licenses, and include reduced-motion/keyboard and low-power variants for interactive features. Add unit tests for added scripts and avoid introducing new dependencies without a strong justification.
 
-For a meaningful change, exercise `python scripts/validate_skill.py`, `python -m unittest discover -s scripts -p 'test_*.py' -v` and any new script you introduced; report what actually ran.
+For a meaningful change, exercise `python3 scripts/validate_skill.py`, `python3 -m unittest discover -s scripts -p 'test_*.py' -v` and any new script you introduced; report what actually ran.

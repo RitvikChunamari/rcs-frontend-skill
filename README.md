@@ -20,16 +20,16 @@ It is **not** a UI component library, a pretrained model, an Awwwards scraper, a
 
 ### Option A — Skills CLI (agents supported by the CLI)
 
-After this repository is published on GitHub, install it by replacing `OWNER` with the GitHub owner:
+Install the published skill from GitHub:
 
 ```bash
-npx skills add OWNER/rcs-frontend-skill
+npx skills add RitvikChunamari/rcs-frontend-skill
 ```
 
 To select global/personal scope for supported agents:
 
 ```bash
-npx skills add OWNER/rcs-frontend-skill -g
+npx skills add RitvikChunamari/rcs-frontend-skill -g
 ```
 
 The [Skills CLI](https://github.com/vercel-labs/skills) can prompt you to select compatible agents. Global install locations, supported agent names, and behavior vary by tool/version. This is **not** a single universal install to every app.
@@ -60,8 +60,8 @@ Beyond the original 12-style atlas, the skill now includes **8 advanced field ma
 Included templates: creative direction brief, reference teardown, interaction contract and quality report. The tools are advisory, not standalone website testing: `design_consistency_audit.py` inventories CSS patterns; `quality_gate.py` summarizes submitted evidence and marks missing evidence **not verified**.
 
 ```bash
-python scripts/design_consistency_audit.py /path/to/project --format markdown
-python scripts/quality_gate.py assets/examples/quality-evidence.example.json
+python3 scripts/design_consistency_audit.py /path/to/project --format markdown
+python3 scripts/quality_gate.py assets/examples/quality-evidence.example.json
 # example intentionally exits 2: its gates are NOT RUN
 ```
 
@@ -71,7 +71,7 @@ python scripts/quality_gate.py assets/examples/quality-evidence.example.json
 
 | Discipline | What the agent is instructed to deliver |
 |---|---|
-| **Design research** | Deconstruct relevant Awwwards/Mobbin examples; learn from Apple, Material, Fluent, Carbon, Spectrum, and other design systems without cloning proprietary work. |
+| **Design research** | Deconstruct freely accessible live sites and public examples; learn from Apple, Material, Fluent, Carbon, Spectrum, and other design systems without cloning proprietary work. |
 | **Art direction and UX** | Choose a defensible concept, visual system, layout, typography, content hierarchy, responsive behaviors, and interaction states. |
 | **Frontend engineering** | Implement semantic, maintainable UI using the **existing project's stack** wherever practical; preserve routes, data, SEO, and behavior. |
 | **Motion and interaction** | Choose CSS/WAAPI, Motion, GSAP/ScrollTrigger and Lenis **when justified**, with reduced-motion and teardown rules. |
@@ -124,14 +124,14 @@ The rules target WCAG 2.2 AA, functional keyboard navigation, reduced-motion sup
 The included project-inventory helper is read-only, requires Python 3.9+, and has no external dependencies:
 
 ```bash
-python scripts/inspect_project.py /path/to/your-project --format markdown
+python3 scripts/inspect_project.py /path/to/your-project --format markdown
 ```
 
 To test the **skill repository itself**:
 
 ```bash
-python -m unittest discover -s scripts -p 'test_*.py' -v
-python scripts/validate_skill.py
+python3 -m unittest discover -s scripts -p 'test_*.py' -v
+python3 scripts/validate_skill.py
 ```
 
 CI runs these checks on pushes and pull requests. They verify skill consistency and scripts, **not** the runtime quality of an unrelated website.

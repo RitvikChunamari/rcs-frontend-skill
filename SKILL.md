@@ -1,6 +1,6 @@
 ---
 name: rcs-frontend
-description: Premium cross-agent creative-direction, design intelligence and production frontend implementation workflow for websites, web apps, product interfaces and creative interactive experiences. Use for UI/UX research, design-system selection, brand-driven art direction, responsive frontend coding, Awwwards-caliber motion, GSAP/Lenis, interactive 3D/WebGL, graphics, Figma-to-code, existing-site redesigns, backend-connected UI, accessibility, performance audits, and production testing, advanced design tokens, typography precision, interaction state machines, design critique, visual consistency audits and evidence-based release gates. Trigger on requests to build, redesign, beautify, animate, refine, critique or ship any frontend experience; including Swiss, editorial, bento minimalism, brutalist, retro, ambient aurora, glass, maximalist, skeuomorphic, cyberpunk, clay, and scrollytelling/3D styles. Compatible with agents that can read SKILL.md; adapt tooling to available environment.
+description: Design and implement distinctive, production-ready websites and web app interfaces. Use for UI/UX research, art direction, design systems, responsive frontend work, redesigns, motion, 3D/WebGL, accessibility, backend-connected states, visual audits, and release QA.
 ---
 
 # RC's Frontend Skill
@@ -19,7 +19,7 @@ Act as one integrated premium design-and-engineering studio: design director, pr
 
 1. **Understand before altering.** Inspect the actual project, current design, routes, dependencies, existing APIs and constraints. Do not replace a working stack just to use a favorite library. For an existing project, preserve its content, features, business logic, routes, API contracts, SEO and accessibility unless explicitly authorized to change them.
 2. **Make a signature design, not a template collage.** Choose one dominant visual direction and at most one supporting influence by default; do not indiscriminately combine trends. Establish one coherent creative concept, hierarchy, typographic voice, layout grammar, palette, imagery/graphics treatment, motion language and component vocabulary. If a flourish cannot be explained by brand, task or narrative, remove it.
-3. **Study source material, do not plagiarize it.** Research Apple/Google/Meta/Netflix and other design languages, Awwwards work, Mobbin flows and relevant real products when browsing is available. Extract principles and interaction mechanics, not source code, proprietary assets, identifiable compositions or distinctive complete designs. Verify licensing and attribution; never imply affiliation.
+3. **Study source material, do not plagiarize it.** Research public design-system documentation, freely accessible live sites, Awwwards work and relevant real products when browsing is available. Extract principles and interaction mechanics, not source code, proprietary assets, identifiable compositions or distinctive complete designs. Verify licensing and attribution; never imply affiliation.
 4. **Functional truth over demos.** Never swap real APIs for fake success flows, stub user data without clearly marking it, remove validation, bypass auth, or change backend assumptions silently. A button is complete only when its real interaction succeeds and fails correctly.
 5. **Accessibility and speed are part of the art direction.** Respect keyboard use, reduced motion, contrast, touch targets, semantics, 200%-400% zoom and slow devices. Make motion a progressive enhancement and always give WebGL a no-WebGL/low-motion fallback.
 6. **Test the running product.** Inspect rendered desktop and mobile screenshots, click through critical flows, run automated tests where tools permit, fix errors and recheck. Never claim a test, visual audit, or metric has passed unless it actually ran; distinguish measured from intended targets.
@@ -31,10 +31,10 @@ Act as one integrated premium design-and-engineering studio: design director, pr
 - Determine `mode`: new-build | redesign | component | animation | 3d | audit | bugfix | integration | conversion.
 - Capture user goal, audience, brand vibe, primary user journeys, target devices, project location, existing backend, mandatory constraints, content preservation, budget and allowed dependencies. If facts are missing, inspect files first, infer safe defaults, and ask only about material blockers. Begin work rather than endlessly planning.
 - Set `intensity`: quiet product utility | editorial premium | kinetic showcase | immersive/3D. Document how intensity serves the user task. Adjust animation to task context and device; marketing hero is not an admin settings page.
-- If code access exists, run `python scripts/inspect_project.py <project-root> --format markdown` for a lightweight baseline; then inspect actual files and git changes. This script does not replace dependency or runtime inspection. If CSS files exist, run `python scripts/design_consistency_audit.py <project-root> --format markdown` to inventory literal colors/tokens/fonts and possible motion-policy gaps. Heuristics are not compliance evidence.
+- If code access exists, run `python3 scripts/inspect_project.py <project-root> --format markdown` for a lightweight baseline; then inspect actual files and git changes. This script does not replace dependency or runtime inspection. If CSS files exist, run `python3 scripts/design_consistency_audit.py <project-root> --format markdown` to inventory literal colors/tokens/fonts and possible motion-policy gaps. Heuristics are not compliance evidence.
 
 ### 1. Research and reverse-engineer
-- Load [references/reference-research.md](references/reference-research.md) for live Awwwards/Mobbin analysis, screenshots, behavioral study, originality and provenance.
+- Load [references/reference-research.md](references/reference-research.md) for live-site analysis, screenshots, behavioral study, originality and provenance. Use freely accessible sources by default.
 - Load [references/design-systems.md](references/design-systems.md) for appropriate established design-system lessons. Do not claim restricted company design kits are public.
 - Select **3-5 relevant inspirations**, not 50 unrelated screens. Record why each is relevant, then articulate what the new product will intentionally do differently.
 
@@ -59,7 +59,7 @@ Act as one integrated premium design-and-engineering studio: design director, pr
 ### 5. Mandatory quality gate
 - Load [references/testing-and-quality.md](references/testing-and-quality.md), execute the applicable test matrix, and fix problems. Minimum: build/typecheck/lint (if configured), critical end-to-end flows, keyboard and automated a11y + manual checks, visual/responsive review, motion lifecycle, real API integration and performance measurement.
 - Aim for WCAG 2.2 AA, good Core Web Vitals (field p75 LCP <=2.5s, INP <=200ms, CLS <=0.1); these are **targets**, not claims. Capture device/network conditions and evidence. Never invent performance scores.
-- Use [references/scorecard.md](references/scorecard.md) to judge the result and apply the style-specific test matrix in [references/style-composition.md](references/style-composition.md). Reject high visual scores if core user actions fail or accessibility is compromised. Read [references/premium-qa-gates.md](references/premium-qa-gates.md) for release blockers, warning policies and required evidence. Use `assets/templates/quality-report.md`; optionally run `python scripts/quality_gate.py <evidence.json>` for completeness (not independent proof).
+- Use [references/scorecard.md](references/scorecard.md) to judge the result and apply the style-specific test matrix in [references/style-composition.md](references/style-composition.md). Reject high visual scores if core user actions fail or accessibility is compromised. Read [references/premium-qa-gates.md](references/premium-qa-gates.md) for release blockers, warning policies and required evidence. Use `assets/templates/quality-report.md`; optionally run `python3 scripts/quality_gate.py <evidence.json>` for completeness (not independent proof).
 
 ### 6. Deliver with evidence
 - Explain what changed and the creative rationale; list files/routes affected and new dependencies; describe real backend compatibility; report which tests ran and passed/failed/not-run, screenshots inspected, performance measurements, and remaining issues.
@@ -87,7 +87,7 @@ For realistic application sequences consult [references/field-recipes.md](refere
 | Release blockers, quality evidence, honest testing status | `references/premium-qa-gates.md` |
 | Worked implementation recipes | `references/field-recipes.md` |
 | Design-language decisions / Apple, Google, Meta, Netflix, IBM, etc. | `references/design-systems.md` |
-| Awwwards / Mobbin / live-site decomposition | `references/reference-research.md` |
+| Public gallery / live-site decomposition | `references/reference-research.md` |
 | Art direction and anti-generic review | `references/art-direction.md` |
 | 12 named visual styles (bento, editorial, brutalist, retro, aurora, 3D, glass, kinetic, tactile, cyberpunk, clay, Swiss) | `references/style-atlas.md` |
 | Style selection rubric, hybrid combinations, CSS examples and style-specific tests | `references/style-composition.md` |
