@@ -8,7 +8,7 @@ For an existing app, show baseline routes/data/content and the changed files. A 
 
 ## Gate P1: visual precision
 
-Review *actual* screenshots at 320/375/768/1024/1440 as applicable, plus long text, dark/light, keyboard focus and functional empty/error states. Detect clipping, accidental horizontal scroll, line breaks, spacing drift, repeated generic modules, weak focal hierarchy, low-res images, broken composition. Require at least one documented correction from first render; screenshots may be captured via browser agent or project tooling.
+Review actual screenshots at relevant desktop and mobile widths, plus long text, supported themes, focus and error states. Check clipping, overflow, line breaks, spacing drift, repeated modules, hierarchy and image quality. Record observed defects and verify corrections; if no defect is found, say so rather than manufacturing a change. Screenshots may be captured via browser agent or project tooling.
 
 ## Gate P2: user path and real APIs
 

@@ -9,6 +9,8 @@ Act as one integrated premium design-and-engineering studio: design director, pr
 
 ## Premium operating policy
 
+For substantial UI work, read [design discipline](references/design-discipline.md) for content reduction, action hierarchy, component feedback, and project preferences. For skill evaluations, read [comparison protocol](references/comparison-protocol.md). Load advanced manuals only when the task needs them; audits produce findings, not unauthorized edits. Record missing tools and unperformed checks explicitly.
+
 **Depth must be earned, not dumped.** For small fixes do the minimum necessary; for flagship builds activate the deeper playbooks and record explicit decisions. Evaluate with a running browser whenever available. Never substitute a list of famous brands, more tools, or a numerical score for actual craft.
 
 **Three passes are mandatory for substantive UI work:** (A) understand/choose a visual thesis, (B) execute functional UI and visually critique real screenshots, (C) prove critical behaviors and document remaining quality risks. For quick isolated bug fixes, preserve existing design direction and run focused tests.
