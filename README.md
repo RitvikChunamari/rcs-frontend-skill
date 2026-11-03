@@ -168,3 +168,7 @@ Issues and pull requests are welcome for better design research procedures, prac
 ## License
 
 MIT — see [LICENSE](LICENSE).
+
+### Motion graphics
+
+Try: “Design a three-second animated identity for a print studio. Show the key poses, build a replayable SVG, and provide a reduced-motion poster.” See the [direction guide](references/motion-graphics.md) and [standalone example](assets/examples/registration-ident.html).

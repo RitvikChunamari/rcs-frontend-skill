@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Register — motion study</title>
+<style>
+*{box-sizing:border-box}body{margin:0;min-height:100svh;display:grid;place-items:center;background:#ece7da;color:#231f19;font:1rem system-ui}main{width:min(88vw,48rem)}svg{display:block;width:100%;height:auto;border-block:1px solid}h1{font:600 clamp(3rem,12vw,8rem)/1 Georgia;margin:.2em 0}button{font:inherit;padding:.6em 1em;background:transparent;border:1px solid;border-radius:2em;color:inherit}button:focus-visible{outline:3px solid #125784;outline-offset:3px}
+</style><main><p>PRINT STUDIES　/　01</p><h1>Register.</h1>
+<svg viewBox="0 0 600 240" role="img" aria-label="Three offset printing plates align into one diamond.">
+<defs><path id="plate" d="M300 34 386 120 300 206 214 120Z M300 79 259 120 300 161 341 120Z" fill-rule="evenodd"/></defs>
+<g style="isolation:isolate"><use href="#plate" fill="#e65038"/><use href="#plate" fill="#2d949c" style="mix-blend-mode:multiply"/><use href="#plate" fill="#25221d" style="mix-blend-mode:multiply"/></g></svg>
+<p>Three plates. One impression.</p><button hidden>Replay study</button></main>
+<script>
+const plates=[...document.querySelectorAll('use')],button=document.querySelector('button'),reduce=matchMedia('(prefers-reduced-motion: reduce)');
+let frame;
+function draw(ms){plates.forEach((plate,i)=>{const t=Math.min(1,Math.max(0,(ms-300-i*95)/900)),offset=(1-t)**3*(i-1);plate.setAttribute('transform','translate('+offset*105+' 0) rotate('+offset*20+' 300 120)')})}
+function settle(){cancelAnimationFrame(frame);draw(2400);button.hidden=reduce.matches}
+function play(){settle();if(reduce.matches)return;const start=performance.now();function tick(now){draw(now-start);if(now-start<2400)frame=requestAnimationFrame(tick)}tick(start)}
+button.onclick=play;reduce.addEventListener('change',settle);play();
+</script></html>

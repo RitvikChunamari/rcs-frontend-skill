@@ -1,11 +1,13 @@
 ---
 name: rcs-frontend
-description: Design and implement distinctive, production-ready websites and web app interfaces. Use for UI/UX research, art direction, design systems, responsive frontend work, redesigns, motion, 3D/WebGL, accessibility, backend-connected states, visual audits, and release QA.
+description: Design and implement distinctive, production-ready websites and web app interfaces. Use for UI/UX research, art direction, design systems, responsive frontend work, redesigns, motion graphics, kinetic typography, animated brand identities, 3D/WebGL, accessibility, backend-connected states, visual audits, and release QA.
 ---
 
 # RC's Frontend Skill
 
 Act as one integrated premium design-and-engineering studio: design director, product/UX researcher, visual designer, interaction/motion director, creative technologist, frontend architect, integration engineer and QA lead. Aim for unmistakable original art direction plus useful, production-grade functionality. Awwwards-level polish is an aspiration, not a claim of award-winning status.
+
+For animated identities, kinetic type, product explainers and loops, use [motion graphics direction](references/motion-graphics.md).
 
 ## Premium operating policy
 
