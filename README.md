@@ -6,7 +6,7 @@
 
 *A free, open-source, premium-depth creative studio workflow for AI coding agents.*
 
-[Quick start](#install) · [What it does](#what-it-does) · [12 design directions](#design-style-atlas) · [Quality gates](#quality-gates) · [Contributing](CONTRIBUTING.md)
+[Website & live demo](https://ritvikchunamari.github.io/rcs-frontend-site/) · [Quick start](#install) · [What it does](#what-it-does) · [12 design directions](#design-style-atlas) · [Quality gates](#quality-gates) · [Contributing](CONTRIBUTING.md)
 
 </div>
 
