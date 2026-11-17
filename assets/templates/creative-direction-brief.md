@@ -1,5 +1,25 @@
 # Creative Direction Record — [project / date]
 
+## Direction selection
+- Mode (user-directed / combined / context-chosen):
+- Target screen, primary activity and task frequency:
+- Evidence from the user and project:
+- Assumptions, unknowns and why work can proceed:
+- Existing system to preserve or authorized replacement:
+- Selected direction and rationale:
+- Supporting influence and its bounded role:
+- Rejected alternative and evidence against it:
+- Conditions that would change the choice:
+
+## Design contract
+- Primary user success condition:
+- Observable acceptance criteria:
+- Representative slice to render first:
+- Applicable test gates and excluded checks with reasons:
+- Unit/component behaviors to cover:
+- Red command and intended failure, green command/result:
+- Visual criteria and states requiring human judgment:
+
 ## Constraint ledger
 - Audience and main task:
 - Brand promise and product truth:

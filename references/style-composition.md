@@ -1,6 +1,6 @@
 # Visual direction selection, hybridization and acceptance tests
 
-Read `style-atlas.md` first. Use this guide before building a visual system or accepting a style-heavy redesign. **Aim for a purposeful signature, not a sampler plate of trends.**
+Resolve the selection mode with [adaptive direction](adaptive-direction.md), then consult `style-atlas.md` for relevant vocabulary. Use this guide before building a visual system or accepting a style-heavy redesign. **Aim for a purposeful signature, not a sampler plate of trends.**
 
 ## 1. Choose the style by user and product evidence
 

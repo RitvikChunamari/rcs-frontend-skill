@@ -39,3 +39,7 @@ Blocker: broken primary task, fabricated backend success, inaccessible essential
 Use creative scorecards for iteration, not as objective claims of being number one or awards. Reports identify observed issues and tests that *ran* versus tests *planned*.
 
 Sources: https://www.w3.org/TR/wcag/ ; https://web.dev/articles/vitals ; https://playwright.dev/docs/test-snapshots
+
+## Planned test and critique gates
+
+Add applicable gates such as `design_contract`, `unit_tests`, `component_tests` and `critique` to `required_gates` before implementation. Every supplied gate is evaluated, including additional failures. A `not_applicable` status needs a concrete `reason`; absence of tools is `not_run`. The checker does not independently validate claims or exemptions.

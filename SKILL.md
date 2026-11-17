@@ -1,6 +1,6 @@
 ---
 name: rcs-frontend
-description: Design and implement distinctive, production-ready websites and web app interfaces. Use for UI/UX research, art direction, design systems, responsive frontend work, redesigns, motion graphics, kinetic typography, animated brand identities, 3D/WebGL, accessibility, backend-connected states, visual audits, and release QA.
+description: Design and implement distinctive, production-ready websites and web app interfaces. Use for adaptive art direction, coherent style combinations, design-driven development, UI/UX, responsive frontend work, motion graphics, 3D/WebGL, rendered critique, unit testing, test-driven behavior changes, and release QA.
 ---
 
 # RC's Frontend Skill
@@ -11,11 +11,15 @@ For animated identities, kinetic type, product explainers and loops, use [motion
 
 ## Premium operating policy
 
+**Direction can be supplied, combined, or inferred.** For substantial design work, use [adaptive direction](references/adaptive-direction.md). Honor explicit user choices. For an addition or refinement without new direction, preserve the established system. For a new design, choose from audience, task, content, assets, platform and constraints; explain the choice briefly and proceed. Missing aesthetic preferences alone do not require a question.
+
+**Design the contract, test behavior, critique the render.** Use [design-driven and test-driven development](references/design-and-test-development.md) to define the experience before implementation and run a real red–green–refactor cycle for testable behavior changes. Use [critique and refinement](references/critique-and-refinement.md) for evidence-based findings and verified repairs. Pure presentation edits use visual checks proportionate to their risk.
+
 For substantial UI work, read [design discipline](references/design-discipline.md) for content reduction, action hierarchy, component feedback, and project preferences. For skill evaluations, read [comparison protocol](references/comparison-protocol.md). Load advanced manuals only when the task needs them; audits produce findings, not unauthorized edits. Record missing tools and unperformed checks explicitly.
 
 **Depth must be earned, not dumped.** For small fixes do the minimum necessary; for flagship builds activate the deeper playbooks and record explicit decisions. Evaluate with a running browser whenever available. Never substitute a list of famous brands, more tools, or a numerical score for actual craft.
 
-**Three passes are mandatory for substantive UI work:** (A) understand/choose a visual thesis, (B) execute functional UI and visually critique real screenshots, (C) prove critical behaviors and document remaining quality risks. For quick isolated bug fixes, preserve existing design direction and run focused tests.
+**Three passes are mandatory for substantive UI work:** (A) resolve direction and a design contract with acceptance criteria, (B) implement in small testable slices and critique actual renders, (C) verify repairs, critical behaviors and remaining quality risks. For quick isolated bug fixes, preserve existing design direction and run focused tests.
 
 **Choose a design intent before reaching for visual components.** Use [references/premium-creative-direction.md](references/premium-creative-direction.md) for art-direction decisions and [references/typography-and-composition.md](references/typography-and-composition.md) for optical polish. Distinctiveness is an outcome of coherence, not random gradients, bento cards, overanimation or 3D.
 
@@ -40,12 +44,13 @@ For substantial UI work, read [design discipline](references/design-discipline.m
 ### 1. Research and reverse-engineer
 - Load [references/reference-research.md](references/reference-research.md) for live-site analysis, screenshots, behavioral study, originality and provenance. Use freely accessible sources by default.
 - Load [references/design-systems.md](references/design-systems.md) for appropriate established design-system lessons. Do not claim restricted company design kits are public.
-- Select **3-5 relevant inspirations**, not 50 unrelated screens. Record why each is relevant, then articulate what the new product will intentionally do differently.
+- For a substantial new direction, select a few relevant references and record the useful principle from each. A focused refinement can work from the incumbent UI and project brief. Load references only when they affect a decision.
 
 ### 2. Design direction and interaction contract
 - Load [references/art-direction.md](references/art-direction.md) and [references/ux-and-content.md](references/ux-and-content.md).
 - Load [references/style-atlas.md](references/style-atlas.md) for the 12 named visual directions: minimalism/bento; human editorial; neo-brutalism/cute-alism; retro/dial-up; ambient aurora; immersive storytelling/3D; glass; kinetic maximalism; tactile skeuomorphism; cyberpunk; claymorphism; Swiss. Read [references/style-composition.md](references/style-composition.md) to select/justify a dominant style, optionally pair one supporting style, create the Style Decision Record and apply style-specific test gates. Treat nicknames as informal creative labels. Do not force the reference trends on an unsuitable app.
-- Produce a concise creative brief: **concept sentence, 3 visual adjectives, brand motif, grid, type roles, color roles, component treatments, motion signature, mobile interpretation, one memorable moment**. For existing products, map all these back to current content and user flows. For meaningful redesigns, fill `assets/templates/creative-direction-brief.md` and contrast truly different alternatives before implementing; see [references/premium-creative-direction.md](references/premium-creative-direction.md).
+- Resolve user-directed, combined, or context-chosen mode using [adaptive direction](references/adaptive-direction.md). Record assumptions, the selected rationale and a plausible rejected alternative. Scope direction to the target screen while preserving shared brand rules.
+- Produce a concise creative brief: **concept sentence, 3 visual adjectives, brand motif, grid, type roles, color roles, component treatments, motion signature, mobile interpretation, one memorable moment**. For existing products, map all these back to current content and user flows. For meaningful redesigns, fill `assets/templates/creative-direction-brief.md` and contrast alternatives when the user has not already fixed the direction; see [references/premium-creative-direction.md](references/premium-creative-direction.md).
 - Create or reuse semantic tokens (color, type, space, elevation, motion, radius), component variants/states, focus styles and dark/light behavior as appropriate. Prefer a recognizable intentional aesthetic to generic gradient/shadow/glass cards. When developing or refactoring a design system, read [references/design-system-architecture.md](references/design-system-architecture.md) for token layers, component contracts, modes and drift governance. Load [references/typography-and-composition.md](references/typography-and-composition.md) for grid/type precision.
 - Favor 1-2 major signature interactions + restrained micro-interactions. Do not put perpetual movement on everything. Establish a meaningful, non-animated fallback for each effect.
 
@@ -56,12 +61,16 @@ For substantial UI work, read [design discipline](references/design-discipline.m
 - Map every visual component to real navigation, data and API state. List the critical API contracts and error states *before* changing them. For nontrivial interactions, create the state table from [references/interaction-architecture.md](references/interaction-architecture.md) and `assets/templates/interaction-contract.md`. For complex async data, use [references/api-and-state-resilience.md](references/api-and-state-resilience.md).
 
 ### 4. Implement and refine
+- Define observable acceptance criteria before changing code. For testable behavior, write a failing test, run it and confirm the intended failure, make it pass, then refactor. Cover relevant boundaries, error/retry and cancellation behavior. Use existing unit/component runners and reserve browser tests for flows that require the browser. See [development workflow](references/design-and-test-development.md).
+- Render one representative slice with real content before repeating its patterns. Review the design contract and implementation together.
 - Build coherent page structure and responsive layout first; implement actual journeys; then animate stable components. Prefer structural CSS/HTML over stacking absolutely positioned decoration. Derive graphic assets from user-provided/appropriately licensed files or original authored shapes.
 - Verify one screen at a time with real rendered screenshots and direct interactions. Adjust type metrics, rag, rhythm, alignment, negative space, crops, overlap, shadows, affordances, transitions and mobile composition. Inspect 320/375/768/1024/1440+ logical widths when relevant, not only a desktop screenshot. Perform at least one true second-pass critique and correction on a key screen; do not describe an unreviewed render as polished.
 - Keep controls semantically correct, links functional, focus visible, and real loading/empty/error/success behavior. Implement graceful fallback for missing assets, no WebGL, slow network, disabled motion and touch.
 
 ### 5. Mandatory quality gate
-- Load [references/testing-and-quality.md](references/testing-and-quality.md), execute the applicable test matrix, and fix problems. Minimum: build/typecheck/lint (if configured), critical end-to-end flows, keyboard and automated a11y + manual checks, visual/responsive review, motion lifecycle, real API integration and performance measurement.
+- Conduct a separate rendered critique using [critique and refinement](references/critique-and-refinement.md). Tie findings to the brief and observable impact, fix in-scope defects, and recheck the affected states. Record whether review was by the same agent or an authorized independent reviewer.
+- Declare applicable gates before implementation. Include unit/component tests for logic and interaction changes; presentation-only changes use visual evidence. The evidence checker evaluates extra gates and accepts justified `not_applicable` statuses. Missing tools or unperformed checks remain `not_run`.
+- Load [references/testing-and-quality.md](references/testing-and-quality.md), execute the applicable test matrix, and fix problems. Select applicable checks: build/typecheck/lint (if configured), relevant unit/component tests, critical end-to-end flows, keyboard and automated a11y + manual checks, visual/responsive review, motion lifecycle, real API integration and performance measurement. Explain exclusions rather than inventing backend or unit-test requirements for static content.
 - Aim for WCAG 2.2 AA, good Core Web Vitals (field p75 LCP <=2.5s, INP <=200ms, CLS <=0.1); these are **targets**, not claims. Capture device/network conditions and evidence. Never invent performance scores.
 - Use [references/scorecard.md](references/scorecard.md) to judge the result and apply the style-specific test matrix in [references/style-composition.md](references/style-composition.md). Reject high visual scores if core user actions fail or accessibility is compromised. Read [references/premium-qa-gates.md](references/premium-qa-gates.md) for release blockers, warning policies and required evidence. Use `assets/templates/quality-report.md`; optionally run `python3 scripts/quality_gate.py <evidence.json>` for completeness (not independent proof).
 
@@ -82,6 +91,9 @@ For realistic application sequences consult [references/field-recipes.md](refere
 
 | Situation | Read |
 |---|---|
+| Choose from context, respect supplied direction, combine styles coherently | `references/adaptive-direction.md` |
+| Design contracts, unit/component tests, red–green–refactor | `references/design-and-test-development.md` |
+| Rendered critique, prioritized repairs, verification loop | `references/critique-and-refinement.md` |
 | Premium design direction: alternatives, distinctive motifs, visual critique | `references/premium-creative-direction.md` |
 | Advanced typography, baseline rhythm, responsive grids, optical finish | `references/typography-and-composition.md` |
 | Design tokens, component variants, design-system drift | `references/design-system-architecture.md` |

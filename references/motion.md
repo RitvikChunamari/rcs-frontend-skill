@@ -60,3 +60,9 @@ Before shipping, verify reduced-motion behavior on the actual installed Lenis ve
 - Magnetic buttons / pointer trails: require strong purpose, disable on coarse pointers and reduced motion, never obstruct hit targets.
 - Horizontal galleries: use actual accessible controls, scroll snap, visible focus and clear progress; never hijack the only scroll mechanism.
 - Chapter-to-chapter 3D transformations: synchronize scene with scroll timeline; offer still-image equivalent and route cleanup.
+
+## Direct manipulation and interruption
+
+For controls that follow a pointer, preserve the grab offset, release pointer capture on completion/cancellation, and respect native scrolling and keyboard equivalents. Update the visible value during the gesture. Provide immediate press feedback while committing the action through the control's normal activation event; pressing down alone must not trigger an irreversible action.
+
+If an animation can be reversed or interrupted, start the next transition from the current visible state. Use an existing spring implementation when velocity continuity is part of the interaction. Decorative entrances seldom need physics. Test rapid reversal, pointer cancellation, unmount, lost focus and preference changes during playback. Keep pending request protection separate from animation timing so motion does not unnecessarily lock input.

@@ -1,5 +1,15 @@
 # Changelog
 
+## Adaptive direction and development discipline (2026-11-17)
+
+- Add user-directed, combined and context-chosen direction selection, including existing-system precedence, evidence, uncertainty and explicit role allocation.
+- Add design contracts, representative-slice reviews, unit/component test guidance and red–green–refactor workflows.
+- Add structured rendered critique with severity, repair and recheck evidence.
+- Extend motion guidance for interruption, cancellation, input feedback and lifecycle checks.
+- Fix evidence evaluation so additional failing gates block release and planned missing gates remain unverified.
+- Support justified not-applicable checks while preserving legacy report inputs and base requirements.
+- Add eight executable evidence-checker regressions and a scenario evaluation guide. Scenario expectations are not cross-agent benchmark results.
+
 ## Unreleased
 
 - Replace GitHub installation placeholders with `RitvikChunamari/rcs-frontend-skill`.

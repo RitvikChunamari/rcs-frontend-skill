@@ -1,12 +1,55 @@
 {
   "project": "EXAMPLE - replace with tested product",
   "gates": {
-    "preservation": {"status": "not_run", "evidence": []},
-    "visual": {"status": "not_run", "evidence": []},
-    "functionality": {"status": "not_run", "evidence": []},
-    "backend": {"status": "not_run", "evidence": []},
-    "accessibility": {"status": "not_run", "evidence": []},
-    "performance": {"status": "not_run", "evidence": []},
-    "responsiveness": {"status": "not_run", "evidence": []}
-  }
+    "preservation": {
+      "status": "not_run",
+      "evidence": []
+    },
+    "visual": {
+      "status": "not_run",
+      "evidence": []
+    },
+    "functionality": {
+      "status": "not_run",
+      "evidence": []
+    },
+    "backend": {
+      "status": "not_run",
+      "evidence": []
+    },
+    "accessibility": {
+      "status": "not_run",
+      "evidence": []
+    },
+    "performance": {
+      "status": "not_run",
+      "evidence": []
+    },
+    "responsiveness": {
+      "status": "not_run",
+      "evidence": []
+    },
+    "design_contract": {
+      "status": "not_run",
+      "evidence": []
+    },
+    "unit_tests": {
+      "status": "not_run",
+      "evidence": []
+    },
+    "component_tests": {
+      "status": "not_run",
+      "evidence": []
+    },
+    "critique": {
+      "status": "not_run",
+      "evidence": []
+    }
+  },
+  "required_gates": [
+    "design_contract",
+    "unit_tests",
+    "component_tests",
+    "critique"
+  ]
 }

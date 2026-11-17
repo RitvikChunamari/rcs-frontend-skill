@@ -2,6 +2,8 @@
 
 Use the project's existing tooling first. Never claim results of commands that did not run. Automated accessibility checks are useful but cannot establish full WCAG compliance without manual review.
 
+For pre-implementation acceptance criteria and test-first logic changes, use [design-driven and test-driven development](design-and-test-development.md). For rendered judgment and repair verification, use [critique and refinement](critique-and-refinement.md).
+
 ## Test pyramid and evidence
 
 | Gate | Minimum verification | Tools/examples | Evidence |

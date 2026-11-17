@@ -1,4 +1,4 @@
 interface:
   display_name: "RC's Frontend Skill"
-  short_description: "Design and ship distinctive production-ready frontends"
-  default_prompt: "Use $rcs-frontend to design and implement a distinctive, accessible frontend experience."
+  short_description: "Choose direction, design, test, critique and refine UI"
+  default_prompt: "Use $rcs-frontend to design and implement this interface. Follow my direction, combine requested influences, or choose from the product context. Define acceptance criteria, test behavior, critique the render and verify fixes."

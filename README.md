@@ -16,6 +16,30 @@ RC's Frontend Skill gives a coding agent an opinionated workflow for **researchi
 
 It is **not** a UI component library, a pretrained model, an Awwwards scraper, an API key, or a guarantee of an award-winning site. Agents still need the project files and tools necessary to implement and verify changes.
 
+## Your direction, or a considered choice
+
+Give the agent a direction, combine influences, or let it choose from what you are building. It considers the target screen, audience, task, real content, existing brand, device needs and delivery constraints. It explains its choice and preserves an established system during focused refinements.
+
+- **Adaptive art direction.** Explicit choices take priority; inferred choices include reasons and assumptions.
+- **Coherent combinations.** Each influence owns a role such as grid, typography, imagery or motion.
+- **Design-driven development.** Define hierarchy, states and observable acceptance criteria, then review a representative rendered slice.
+- **Unit tests and test-driven development.** For testable behavior, run a failing test, implement the correction, pass it and refactor. Pure styling changes receive visual checks.
+- **Rendered critique and repair.** Locate problems, explain their impact, fix them and recheck the same views and states.
+- **Interaction resilience.** Verify cancellation, interruptions, recovery, keyboard access and reduced motion.
+- **Applicable release evidence.** Planned and extra test gates count toward the verdict. Inapplicable checks require a reason; unperformed checks remain visible.
+
+These capabilities guide the coding agent through the tools available in its environment. The skill does not execute tests or validate a website by itself.
+
+Try one of these prompts:
+
+> Build a booking page for a neighborhood ceramics studio. Choose the direction from the audience and available content, explain it, and implement the main booking flow.
+
+> Combine Swiss structure with editorial imagery for this portfolio. Define what each influence controls.
+
+> Improve this settings form. Preserve its design system, write regression tests for the validation bug, and critique the rendered error and success states.
+
+See [direction selection](references/adaptive-direction.md), [development workflow](references/design-and-test-development.md), [critique process](references/critique-and-refinement.md), and [scenario checks](assets/examples/direction-scenarios.md).
+
 ## Install
 
 ### Option A — Skills CLI (agents supported by the CLI)
